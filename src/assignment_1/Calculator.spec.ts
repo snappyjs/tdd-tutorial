@@ -7,7 +7,8 @@ describe(" --- Test Without TDD --- ", () => {
     controller = new Calculator();
   });
 
-  it("should just work", () => {
-    expect(controller).toBeTruthy();
+  it("should calculate co2.", () => {
+    const res = controller.calculate();
+    expect(res).toEqual(212.5);
   });
 });
